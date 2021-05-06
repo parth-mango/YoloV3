@@ -24,7 +24,7 @@ We use the midas encoder - Resnext 101 as the common encoder and then attach the
 
 ## Current Development
 
-1. The model seems to be working as a combined multi headed archietecture. The training started but run give a notorious error "CUDA runtime error (59) : device-side assert triggered". Upon delving into the error this is arising from the issue in class labels. I tried to run the model without cuda on cpu and the error points to the compute loss function of Yolo "utils.py" file. I have been trying to find a solution but the error seems to persist. 
+The model seems to be working as a combined multi headed archietecture. The training started but run give a notorious error "CUDA runtime error (59) : device-side assert triggered". Upon delving into the error this is arising from the issue in class labels. I tried to run the model without cuda on cpu and the error points to the compute loss function of Yolo "utils.py" file. I have been trying to find a solution but the error seems to persist. 
 
 
 ## Ending Remarks
