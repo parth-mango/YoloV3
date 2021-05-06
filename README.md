@@ -4,7 +4,7 @@
 
 ### The task here was to work on safety equipment dataset, namely - Hardhat, Boots, Mask and Vest. The challenge was to generate bounding boxes using YoloV3 archietecture, masks/planer images using Planercnn archietecture and depth images using Midas Architecture on the given images in the dataset. From the model point of view, all the three algorithms are based on encoder decoder archietecture thus the challenging part was to combine the three models together to produce satisfactory results. 
 
-## Our Solution
+## My Solution
 
 ### Model Archiecteture
 We use the midas encoder - Resnext 101 as the common encoder and then attach the yolo decoder, midas decoder and planercnn decoder to it. This is a multihead model with different types of output in different heads. The losses are combined as "total loss" which is backpropogated through the yolo and planercnn decoder to train the decoders while the common encoder and midas decoder are used with backpropagation. 
