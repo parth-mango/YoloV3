@@ -15,7 +15,7 @@ We use the midas encoder - Resnext 101 as the common encoder and then attach the
 ### Supportive Changes:
 1. The config file of planer cnn was changed to turn off the depth map prediction as we use the depth map from the midas branch.
 2. A make_date.py file was written that combines the loading function of different archietecture. Help from several sources were taken.
-3. Argument parsers were combined and written off in options.py file to ease passing of the arguments.
+3. Argument parsers were combined and written off in parser.py file to ease passing of the arguments.
 4. In train.py file the training functions of planercnn and yolo were included to train the layers of respective deocders
 5. The evaluate code was used from Midas intel repository to give depth map predictions
 6. The loss of each of the three heads were combined and was backpropagated into planercnn and yolo decoder.
